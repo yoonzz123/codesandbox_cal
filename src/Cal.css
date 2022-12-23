@@ -1,0 +1,67 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+.App {
+  display: flex;
+  margin: auto;
+  margin-top: 15%;
+  width: 80%;
+  height: 36rem;
+}
+
+input {
+  height: 1.9rem;
+  margin: 0.5rem;
+  width: 90%;
+  padding: 3px;
+  text-align: right;
+  background-color: cadetblue;
+  color: cyan;
+  font-size: 1.6rem;
+  border: 1px solid rgb(24, 98, 102);
+}
+
+.insertBox {
+  display: flex;
+}
+
+.insertBox > * {
+  display: grid;
+  gap: 0.4rem;
+  margin: 0.8rem;
+  font-weight: bold;
+}
+.insertBox * {
+  color: white;
+  font: 1.7rem bold;
+}
+.insertBox > * > * {
+  border-radius: 0.5rem;
+  border: 0px;
+  background-color: rgba(7, 46, 43, 0.63);
+}
+.insertBox > *:nth-child(1) {
+  flex-grow: 2;
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.insertBox > *:nth-child(2) {
+  flex-grow: 1.7;
+  grid-template-columns: repeat(auto-fit, minmax(40%, auto));
+}
+
+.calbox > *:nth-child(5) {
+  grid-column: 1 / 2;
+  grid-row: 3 / 5;
+}
+
+button:hover {
+  color: #001f3f;
+  background-color: darkgray;
+}
+button {
+  transition: all 0.2s ease;
+}
+button:active {
+  background-color: darkcyan;
+}
